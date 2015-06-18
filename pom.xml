@@ -4,9 +4,17 @@
   <artifactId>WSQR</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>WSQR+</name>
-  <description>WSQR Annotation Tool + QoS Ontology API</description>
+  <description>Maven Project for the WSQR Annotation Tool + QoS Ontology Support</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -21,4 +29,5 @@
   <organization>
   	<name>scase</name>
   </organization>
+  <url>https://github.com/s-case/wsqr.git</url>
 </project>
