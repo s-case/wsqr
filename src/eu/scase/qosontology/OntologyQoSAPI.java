@@ -21,7 +21,7 @@ public class OntologyQoSAPI {
 	 * you do <u><b>NOT</b></u> call {@link #close()}.
 	 */
 	public OntologyQoSAPI() {
-		String filename = ".\\ontology\\WSQuality.owl";
+		String filename = "./ontology/WSQuality.owl";
 		String SOURCE = "http://www.owl-ontologies.com/Ontology1406103978.owl";
 		ontology = new OntologyJenaAPI(filename, SOURCE);
 	}

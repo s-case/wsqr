@@ -36,6 +36,10 @@
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.783</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Code2webWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A0">
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Method_Invocations_DMI"/>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#MoneyToStringConverterWS__Object_Method_Invocations_OMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Object_Method_Invocations_OMI"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -66,6 +70,10 @@
     <WebServiceName>RandomDataGeneratorWS</WebServiceName>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#RandomDataGeneratorWS__Quality_Perception__Median"/>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#RandomDataGeneratorWS__Bugs__Raw"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A1">
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Efferent_Couplings_Ce"/>
+    <rdf:rest rdf:nodeID="A0"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#RomanNumbersConverterWS__Object_Method_Invocations_OMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Object_Method_Invocations_OMI"/>
@@ -519,6 +527,10 @@
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToCSharpWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A2">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <owl:oneOf rdf:nodeID="A3"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToExcelWS__Bugs__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Bugs"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -916,7 +928,7 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#MeasureValueKind">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DatatypeProperty"/>
-    <rdfs:range rdf:nodeID="A0"/>
+    <rdfs:range rdf:nodeID="A2"/>
     <rdfs:domain rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Measure"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#NumberToWordWS__Distinct_Method_Invocations_DMI__Raw">
@@ -1006,10 +1018,6 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#YaHP_ConverterWS__Weighted_Methods_per_Class_WMC__Raw"/>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#YaHP_ConverterWS__Object_Method_Invocations_OMI__Raw"/>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#YaHP_ConverterWS__McCabe_Cyclomatic_Complexity_CC__Raw"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A1">
-    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Afferent_Couplings_Ca"/>
-    <rdf:rest rdf:nodeID="A2"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#ComputeUnitsWS__Lines_of_Code_LOC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lines_of_Code_LOC"/>
@@ -1128,10 +1136,6 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToExcelWS"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A2">
-    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Efferent_Couplings_Ce"/>
-    <rdf:rest rdf:nodeID="A3"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToPythonWS">
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToPythonWS__Accessability_AC__Raw"/>
@@ -1271,10 +1275,6 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#NumericalConverterWS"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A4">
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MergingOfModules: ∀tr(DynCoupling(m1 ∪m2, tr) ≤ DynCoupling(m1, tr) + Coupling(m2, tr))</rdf:first>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#XMLtoRDFConverterWS__Afferent_Couplings_Ca__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Afferent_Couplings_Ca"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -1387,10 +1387,6 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">108.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#SecurePasswordGeneratorWS"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A3">
-    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Method_Invocations_DMI"/>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#SecurePasswordGeneratorWS__Distinct_Method_Invocations_DMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Method_Invocations_DMI"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -1459,6 +1455,10 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#RomanNumbersConverterWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A4">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NullValue: The coupling of a module with no outer relationships is null under all execution traces</rdf:first>
+    <rdf:rest rdf:nodeID="A5"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToExcelWS__McCabe_Cyclomatic_Complexity_CC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#McCabe_Cyclomatic_Complexity_CC"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -1514,10 +1514,6 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.66</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToLaTexWS"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A5">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
-    <owl:oneOf rdf:nodeID="A6"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#MoneyToStringConverterWS__Lack_of_Cohesion_of_Methods_LCOM__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lack_of_Cohesion_of_Methods_LCOM"/>
@@ -1628,6 +1624,10 @@ Accessability=numOfAckMsgs/numOfReqMsgs</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.322</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToPythonWS"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A6">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Median</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#ComputeUnitsWS__Object_Method_Invocations_OMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Object_Method_Invocations_OMI"/>
@@ -1743,6 +1743,10 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Artist_RegistryWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A7">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average</rdf:first>
+    <rdf:rest rdf:nodeID="A6"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToExcelWS__Distinct_Classes_DC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Classes_DC"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -1754,10 +1758,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#ArtistRegistry"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A7">
-    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lines_of_Code_LOC"/>
-    <rdf:rest rdf:nodeID="A1"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToCSharpWS__Distinct_Classes_DC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Classes_DC"/>
@@ -1826,6 +1826,10 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Method_Invocations_DMI"/>
     <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Dynamic_Measure"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A8">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <owl:unionOf rdf:nodeID="A9"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#ExcelToSqlWS__Lines_of_Code_LOC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lines_of_Code_LOC"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -1843,10 +1847,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValueKind>Average</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">2.9</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#RandomDataGeneratorWS"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A8">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
-    <owl:unionOf rdf:nodeID="A7"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToLaTexWS__Availability_AV__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Availability_AV"/>
@@ -1878,9 +1878,9 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.977</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#NumericalConverterWS"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A0">
-    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
-    <owl:oneOf rdf:nodeID="A9"/>
+  <rdf:Description rdf:nodeID="A9">
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lines_of_Code_LOC"/>
+    <rdf:rest rdf:nodeID="A10"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#XMLtoRDFConverterWS__Object_Method_Invocations_OMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Object_Method_Invocations_OMI"/>
@@ -1984,10 +1984,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">194.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToCSharpWS"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A9">
-    <rdf:rest rdf:nodeID="A10"/>
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raw</rdf:first>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#ComputeUnitsWS__Successability_SU__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Successability_SU"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -2023,10 +2019,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">94.475</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#HtmlToLaTexWS"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A11">
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">NullValue: The coupling of a module with no outer relationships is null under all execution traces</rdf:first>
-    <rdf:rest rdf:nodeID="A4"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#ArtistRegistry__Accessability_AC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Accessability_AC"/>
@@ -2203,10 +2195,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Artist_RegistryWS__Lines_of_Code_LOC__Raw"/>
     <has_measure rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Artist_RegistryWS__Availability_AV__Raw"/>
   </rdf:Description>
-  <rdf:Description rdf:nodeID="A10">
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Average</rdf:first>
-    <rdf:rest rdf:nodeID="A12"/>
-  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#SecurePasswordGeneratorWS__Afferent_Couplings_Ca__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Afferent_Couplings_Ca"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -2275,10 +2263,6 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</MeasureValue>
     <StatisticalTestUsed>T-test</StatisticalTestUsed>
     <AccuracyLevel rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.923</AccuracyLevel>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A12">
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Median</rdf:first>
-    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#MoneyToStringConverterWS__Dynamic_Coupling_Between_Objects_DCBO__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Dynamic_Coupling_Between_Objects_DCBO"/>
@@ -2416,6 +2400,10 @@ Availability=1-downTime/measuredTime)</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">5.3</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#RomanNumbersConverterWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A3">
+    <rdf:rest rdf:nodeID="A7"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Raw</rdf:first>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#Successability_SU">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The successability correlates with CC and DCBO by a Logistic Regression Model
@@ -2425,10 +2413,6 @@ SU=e^(-0,15*CC+0,08*DCBO)/(1+e^(-0,15*CC+0,08*DCBO))</rdfs:comment>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Quality_Perception"/>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Availability_AV"/>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Accessability_AC"/>
-  </rdf:Description>
-  <rdf:Description rdf:nodeID="A6">
-    <rdf:rest rdf:nodeID="A11"/>
-    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monotonicity: OuterR(m1) ⊆ OuterR(m2) ∧ R1 ⊆ R2 ∧ tr1 ⊆ tr2 -&gt; DynCoupling(m1, tr1) ≤ DynCoupling(m2, tr)</rdf:first>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#Code2Web__Weighted_Methods_per_Class_WMC__Average">
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Code2Web"/>
@@ -2559,6 +2543,10 @@ SU=e^(-0,15*CC+0,08*DCBO)/(1+e^(-0,15*CC+0,08*DCBO))</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">4.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#JavaToPythonWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A10">
+    <rdf:first rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Afferent_Couplings_Ca"/>
+    <rdf:rest rdf:nodeID="A1"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#Code2webWS__Distinct_Classes_DC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Distinct_Classes_DC"/>
     <MeasureValueKind>Raw</MeasureValueKind>
@@ -2637,6 +2625,10 @@ SU=e^(-0,15*CC+0,08*DCBO)/(1+e^(-0,15*CC+0,08*DCBO))</rdfs:comment>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">8.0</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#SecurePasswordGeneratorWS"/>
   </rdf:Description>
+  <rdf:Description rdf:nodeID="A5">
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MergingOfModules: ∀tr(DynCoupling(m1 ∪m2, tr) ≤ DynCoupling(m1, tr) + Coupling(m2, tr))</rdf:first>
+    <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+  </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#Quality_Perception">
     <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
     <rdfs:subClassOf rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#External_Measure"/>
@@ -2645,6 +2637,10 @@ SU=e^(-0,15*CC+0,08*DCBO)/(1+e^(-0,15*CC+0,08*DCBO))</rdfs:comment>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Availability_AV"/>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Successability_SU"/>
     <owl:disjointWith rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Bugs"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A11">
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#DataRange"/>
+    <owl:oneOf rdf:nodeID="A12"/>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#RomanNumbersConverterWS__Lines_of_Code_LOC__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Lines_of_Code_LOC"/>
@@ -2737,6 +2733,10 @@ SU=e^(-0,15*CC+0,08*DCBO)/(1+e^(-0,15*CC+0,08*DCBO))</rdfs:comment>
     <MeasureValueKind>Raw</MeasureValueKind>
     <MeasureValue rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.813</MeasureValue>
     <is_measure_of rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#SecurePasswordGeneratorWS"/>
+  </rdf:Description>
+  <rdf:Description rdf:nodeID="A12">
+    <rdf:rest rdf:nodeID="A4"/>
+    <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Monotonicity: OuterR(m1) ⊆ OuterR(m2) ∧ R1 ⊆ R2 ∧ tr1 ⊆ tr2 -&gt; DynCoupling(m1, tr1) ≤ DynCoupling(m2, tr)</rdf:first>
   </rdf:Description>
   <rdf:Description rdf:about="http://www.owl-ontologies.com/Ontology1406103978.owl#YaHP_ConverterWS__Object_Method_Invocations_OMI__Raw">
     <rdf:type rdf:resource="http://www.owl-ontologies.com/Ontology1406103978.owl#Object_Method_Invocations_OMI"/>

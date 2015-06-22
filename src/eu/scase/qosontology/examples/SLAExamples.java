@@ -10,7 +10,7 @@ import com.hp.hpl.jena.rdf.model.Literal;
 /**
  * Example for reaching Service Level Agreements (SLAs) using the QoS ontology
  * 
- * @author Themistoklis Diamantopoulos
+ * @author Themistoklis Diamantopoulos and Davide Tosi
  */
 public class SLAExamples {
 
@@ -33,14 +33,14 @@ public class SLAExamples {
 			.selectMeasures("Availability_AV", "Quality_Perception")
 			.filter("MeasureValueKind(Quality_Perception) = 'Average'")
 			.filter("Availability_AV = 1")
-			.filter("Quality_Perception > 4")
+			.filter("Quality_Perception > 5")
 			.sort("DESC(Availability_AV)", "DESC(Quality_Perception)");
 
 		// Perform the query
 		ResultSet results = ontology.performQuery(query);
 
 		// Print the results to screen
-		System.out.println("Selected Web Services\t\tAvailability_AV\t\tQuality_Perception");
+		System.out.println("SLA1 - Selected WSs\t\tAvailability_AV\t\tQuality_Perception");
 		while (results.hasNext()) {
 			QuerySolution solution = results.nextSolution();
 			Literal webservicename = solution.getLiteral("WebServiceName");
@@ -71,14 +71,15 @@ public class SLAExamples {
 			.selectMeasures("Quality_Perception", "Distinct_Method_Invocations_DMI")
 			.define("NumBugs", "0.47352 * Distinct_Method_Invocations_DMI - 1.962222")
 			.filter("MeasureValueKind(Quality_Perception) = 'Average'")
-			.filter("NumBugs < 2", "Quality_Perception > 4.0")
+			.filter("NumBugs < 2")
+			.filter("Quality_Perception > 4.0")
 			.sort("ASC(NumBugs)", "DESC(Quality_Perception)");
 
 		// Perform the query
 		ResultSet results = ontology.performQuery(query);
 
 		// Print the results to screen
-		System.out.println("Selected Web Services\t\tNumBugs\t\t\tQuality_Perception");
+		System.out.println("SLA2 - Selected WSs\t\tNumBugs\t\t\tQuality_Perception");
 		while (results.hasNext()) {
 			QuerySolution solution = results.nextSolution();
 			Literal webservicename = solution.getLiteral("WebServiceName");
@@ -115,7 +116,7 @@ public class SLAExamples {
 		ResultSet results = ontology.performQuery(query);
 
 		// Print the results to screen
-		System.out.println("Selected Web Services\t\tSuccessability_SU\tBugs");
+		System.out.println("SLA3 - Selected WSs\t\tSuccessability_SU\tBugs");
 		while (results.hasNext()) {
 			QuerySolution solution = results.nextSolution();
 			Literal webservicename = solution.getLiteral("WebServiceName");
@@ -132,7 +133,7 @@ public class SLAExamples {
 	 * ID: SLA4<br>
 	 * Name: Service Level Agreement 4 - Converting data into different units of measure<br>
 	 * Description: I need a service to convert data into different units of measure. The service must have
-	 * accessibility index more than 0.8. Note that the probability that accessability index is larger than
+	 * accessibility index more than 0.42. Note that the probability that accessability index is larger than
 	 * 0.891 (P(Accessibility_Index > 0.891)) is computed as:<br>
 	 * exp(L12) / (1 + exp(L12)), where L12 = -0.2778 - 0.0027 * Weighted_Methods_per_Class_WMC<br>
 	 * Services involved: ComputeUnitsWS, CurrencyConverterWS, MoneyToStringConverterWS, NumberToWordWS,
@@ -149,7 +150,7 @@ public class SLAExamples {
 			.define("L12", "-0.2778 - 0.0027 * Weighted_Methods_per_Class_WMC")
 			.define("expL12", "((L12 + 3) * (L12 + 3) + 3) / ((L12 - 3) * (L12 - 3) + 3)")
 			.define("P_Accessibility_Index", "expL12 / (1 + expL12)")
-			.filter("P_Accessibility_Index > 0.4")  // Assuming e.g. that having an accessibility index more than 0.4
+			.filter("P_Accessibility_Index > 0.42")  // Assuming e.g. that having an accessibility index more than 0.4
 													// means having accessibility more than 0.8
 			.sort("DESC(P_Accessibility_Index)");
 
@@ -163,7 +164,7 @@ public class SLAExamples {
 		ResultSet results = ontology.performQuery(query);
 
 		// Print the results to screen
-		System.out.println("Selected Web Services\t\tP_Accessibility_IndexIndex");
+		System.out.println("SLA4 - Selected WSs\t\tP_Accessibility_IndexIndex");
 		while (results.hasNext()) {
 			QuerySolution solution = results.nextSolution();
 			Literal webservicename = solution.getLiteral("WebServiceName");
@@ -201,7 +202,7 @@ public class SLAExamples {
 		ResultSet results = ontology.performQuery(query);
 
 		// Print the results to screen
-		System.out.println("Selected Web Services\t\tAccessability_AC\tQuality_Perception\tDistinct_Classes");
+		System.out.println("SLA5 - Selected WSs\t\tAccessability_AC\tQuality_Perception\tDistinct_Classes");
 		while (results.hasNext()) {
 			QuerySolution solution = results.nextSolution();
 			Literal webservicename = solution.getLiteral("WebServiceName");
@@ -227,4 +228,3 @@ public class SLAExamples {
 		SLA5();
 	}
 }
-
